@@ -5,6 +5,7 @@ import logging
 from logging import  handlers
 import os
 
+folderpath= os.environ.get('thfolder', '/data/splunk/etc/apps/thintell/appserver/static/')
 
 def setup_logger(level):
     logger = logging.getLogger('message')
@@ -54,7 +55,7 @@ def main():
         file = f
         file2 = file.strip('.gz')
         with gzip.open(file, 'rb') as filein:
-            with open(file2, 'wb') as fileout:
+            with open(f'{folderpath}'+file2, 'wb') as fileout:
                 print(shutil.copyfileobj(filein, fileout))
         checkfile = os.path.getsize(file2)
         chekthz = str(os.path.exists(file))
