@@ -11,3 +11,7 @@
 <p>if you want to change folder you can easly change  download location  changing with "folderpath" and you can change the log lile location changing with "file_path" <p>
   
   
+<p><b>phisthank.py</b></p>
+
+easly download and unzip phisthank gzip file 
+
