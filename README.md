@@ -13,5 +13,10 @@
   
 <p><b>phisthank.py</b></p>
 
-easly download and unzip phisthank gzip file 
+easly download and unzip phisthank gzip file. Please beaware phistank rate limit:
+
+< X-Request-Limit-Interval: 259200 Seconds
+< X-Request-Limit: 75
+< X-Request-Count: 170
+< CF-Cache-Status: DYNAMIC
 
