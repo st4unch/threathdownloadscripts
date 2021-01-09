@@ -1,4 +1,4 @@
-# Diffrent type of threat feed
+# Different type of threat feed
 
 <p><b>abuse_malware_hash.py</b></p>
 <p></p>
