@@ -9,9 +9,9 @@ import logging.handlers
 
 
 
-folderpath= os.environ.get('thfolder', 'C:\data\splunk\etc\\apps\\thintell\\appserver\\static\\')
+folderpath= os.environ.get('thfolder', '/data/splunk/etc/apps/thintell/appserver/static')
 domain = "https://platform.socradar.com/api/threat/intelligence/feed_list/"
-key = "?key=3ad9fe099a8e49018ff98ef882b88d1c&v=2"
+key = "?key=asdasdasdasdasdasda&v=2" ## you must add your key
 fname="SocRadarfeed_list.csv"
 
 def callcreatefile():
