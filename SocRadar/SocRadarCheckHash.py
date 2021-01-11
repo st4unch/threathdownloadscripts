@@ -31,9 +31,12 @@ def setup_logger(level):
 logger = setup_logger(logging.INFO)
 
 def readthelocalfile(fname): #reading local "SocRadarfeed_list.csv" file
-    file=open(fname, 'r')
-    readedfile=csv.DictReader(file)
-    return readedfile
+    try:
+        file=open(fname, 'r')
+        readedfile=csv.DictReader(file)
+        return readedfile
+    except:
+        logger.info('msg:file cannot reading please check permission')
 
 def exfildesc(fname):#exctract filename and description from local file
     filn=[]
@@ -77,8 +80,6 @@ def createfile():
                 writer.writerow({'newfilename': filename, 'newdescription': description, 'oldhash': newhash, 'newhash': newhash})
             if filename == rsfilename and newhash != currenthash:
                 createresponsefile(description, dumpresp)
-                print(newhash)
-                print(currenthash)
 
 
 def main():
